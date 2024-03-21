@@ -15,13 +15,13 @@ public class Marca {
     @Column(name="id",nullable = false)
     private Integer id;
     @Column(name="nombreMarca",nullable = false, length = 100)
-    private String nombreMarca;
+    private String nombreMarca;//Obligatorio y maximo 50 caracteres
     @Column(name="nit",nullable = false)
-    private String nit;
+    private String nit;//Obligatorio solo numeros y maximo 10
     @Column(name="anocreacion",nullable = false)
-    private LocalDate anoCreacion;
+    private LocalDate anoCreacion;//Obligario
     @Column(name="cantidadProductos",nullable = false,length = 50)
-    private String sedePrincipal;
+    private String sedePrincipal;//No se valida
 
     public Marca() {
     }

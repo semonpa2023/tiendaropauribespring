@@ -13,7 +13,7 @@ public class Pedido {
     @Column(name="id",nullable = false)
     private Integer id;
     @Column(name="fechayhora",nullable = false)
-    private LocalDateTime FechaYHora;
+    private LocalDateTime FechaYHora;//obligatorio  y formato internacional
 
     public Pedido() {
     }
